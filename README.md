@@ -1,7 +1,7 @@
 <div align="center">
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 
-# 🎓 Campus SkillSwap
+# 🎓 Skill-Share
 
 ### _The Digital Atelier for Campus Minds_
 
@@ -44,7 +44,7 @@
 
 ## ✨ Overview
 
-**Campus SkillSwap** is a college-internal, peer-to-peer learning platform that fundamentally reimagines how knowledge flows on campus. Unlike traditional mentorship tools with rigid hierarchies, SkillSwap treats **every student as both a learner and a teacher** — because the best way to master something is to teach it.
+**Skill-Share** is a college-internal, peer-to-peer learning platform that fundamentally reimagines how knowledge flows on campus. Unlike traditional mentorship tools with rigid hierarchies, Skill-Share treats **every student as both a learner and a teacher** — because the best way to master something is to teach it.
 
 ### 🎯 The Problem
 
@@ -52,7 +52,7 @@
 
 ### 💡 The Solution
 
-Campus SkillSwap creates a **bidirectional knowledge marketplace** where:
+Skill-Share creates a **bidirectional knowledge marketplace** where:
 - A **1st-year student** skilled in Python can teach a **4th-year student** struggling with scripting
 - A **Mechanical Engineering** student proficient in SolidWorks can exchange CAD expertise for web development sessions
 - **Certificate verification** ensures that expertise claims are backed by real credentials
@@ -351,7 +351,7 @@ CREATE TYPE verification_status AS ENUM ('PENDING', 'VERIFIED', 'REJECTED');
 
 ## 🤖 AI Integration
 
-Campus SkillSwap leverages **three different Gemini models**, each optimized for a specific use case:
+Skill-Share leverages **three different Gemini models**, each optimized for a specific use case:
 
 ### Multi-Model Strategy
 
@@ -398,7 +398,7 @@ flowchart LR
 ## 📂 Project Structure
 
 ```
-campus-skillswap/
+skill-share/
 ├── 📄 index.html                  # Entry HTML with Tailwind config & Material Design 3 tokens
 ├── 📄 index.tsx                   # React DOM root mount
 ├── 📄 App.tsx                     # Root component — routing, auth state, AI chat widget
@@ -458,7 +458,7 @@ sequenceDiagram
     end
 ```
 
-**Session persistence:** Logged-in users are stored in `localStorage` under the key `skillswap_user`, enabling seamless reload without re-authentication.
+**Session persistence:** Logged-in users are stored in `localStorage` under the key `skillshare_user`, enabling seamless reload without re-authentication.
 
 ---
 
@@ -612,6 +612,6 @@ _If this project helped you, please consider giving it a ⭐ — it really helps
 
 <br />
 
-[⬆ Back to Top](#-campus-skillswap)
+[⬆ Back to Top](#-skill-share)
 
 </div>

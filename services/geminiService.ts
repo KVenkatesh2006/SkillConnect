@@ -11,7 +11,7 @@ export const geminiService = {
         model: 'gemini-3-pro-preview',
         contents: `${context ? `Context: ${context}\n\n` : ''}User Question: ${message}`,
         config: {
-          systemInstruction: "You are an AI assistant for the Campus SkillSwap platform. You help students find learning resources, explain complex academic concepts, and provide tips for peer tutoring. Keep answers concise and academic-focused.",
+          systemInstruction: "You are an AI assistant for the Skill-Share platform. You help students find learning resources, explain complex academic concepts, and provide tips for peer tutoring. Keep answers concise and academic-focused.",
           thinkingConfig: { thinkingBudget: 2000 }
         },
       });
@@ -92,7 +92,7 @@ export const geminiService = {
       });
       return response.text;
     } catch (error) {
-      return "An aspiring learner on Campus SkillSwap.";
+      return "An aspiring learner on Skill-Share.";
     }
   }
 };

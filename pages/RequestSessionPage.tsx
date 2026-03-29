@@ -71,7 +71,7 @@ const RequestSessionPage: React.FC<{ user: User }> = ({ user }) => {
             <span className="material-symbols-outlined text-[20px]">arrow_back</span>
             <span className="text-sm font-medium">Back</span>
           </button>
-          <span className="text-xl font-bold tracking-tighter text-indigo-700 font-headline">Campus SkillSwap</span>
+          <span className="text-xl font-bold tracking-tighter text-indigo-700 font-headline">Skill-Share</span>
         </div>
       </header>
 

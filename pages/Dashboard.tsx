@@ -148,7 +148,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
       {/* TopNavBar */}
       <nav className="fixed top-0 w-full flex justify-between items-center px-8 h-16 bg-white/80 backdrop-blur-xl z-50 shadow-[0_20px_40px_-12px_rgba(25,28,30,0.08)]">
         <div className="flex items-center gap-8">
-          <span className="text-xl font-bold tracking-tighter text-indigo-700 font-headline">Campus SkillSwap</span>
+          <span className="text-xl font-bold tracking-tighter text-indigo-700 font-headline">Skill-Share</span>
           <div className="hidden md:flex items-center bg-surface-container-low rounded-full px-4 py-1.5 w-80 group transition-all focus-within:ring-2 focus-within:ring-primary/20">
             <span className="material-symbols-outlined text-outline text-sm">search</span>
             <input className="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-outline-variant font-medium outline-none ml-2" placeholder="Search peers, skills..." type="text" />

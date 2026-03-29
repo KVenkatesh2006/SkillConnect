@@ -13,7 +13,7 @@ const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const storedUser = localStorage.getItem('skillswap_user');
+    const storedUser = localStorage.getItem('skillshare_user');
     if (storedUser) {
       setUser(JSON.parse(storedUser));
     }
@@ -22,12 +22,12 @@ const App: React.FC = () => {
 
   const handleLogin = (loggedUser: User) => {
     setUser(loggedUser);
-    localStorage.setItem('skillswap_user', JSON.stringify(loggedUser));
+    localStorage.setItem('skillshare_user', JSON.stringify(loggedUser));
   };
 
   const handleLogout = () => {
     setUser(null);
-    localStorage.removeItem('skillswap_user');
+    localStorage.removeItem('skillshare_user');
   };
 
   if (isLoading) return <div className="flex items-center justify-center h-screen bg-surface">
@@ -102,7 +102,7 @@ const AIChatWidget: React.FC = () => {
           <div className="p-4 bg-primary text-white flex justify-between items-center shadow-sm">
             <h3 className="font-bold flex items-center gap-2 font-headline">
               <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>auto_awesome</span>
-              SkillSwap AI
+              Skill-Share AI
             </h3>
             <button onClick={() => setIsOpen(false)} className="material-symbols-outlined hover:bg-white/20 p-1 rounded-full transition-colors">close</button>
           </div>

@@ -72,7 +72,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
             <div className="w-10 h-10 bg-login-gradient rounded-full flex items-center justify-center shadow-md transform group-hover:scale-110 transition-transform">
               <span className="material-symbols-outlined text-white" style={{ fontVariationSettings: "'FILL' 1" }}>swap_horiz</span>
             </div>
-            <span className="font-headline text-xl font-extrabold tracking-tighter text-primary">Campus SkillSwap</span>
+            <span className="font-headline text-xl font-extrabold tracking-tighter text-primary">Skill-Share</span>
           </div>
           <h1 className="font-headline text-3xl md:text-4xl text-on-surface mb-2 font-bold tracking-tight">Learn faster. Teach smarter.</h1>
           <p className="text-on-surface-variant text-lg">Welcome back to the exchange.</p>
