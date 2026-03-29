@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus SkillSwap</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error-container": "#ffdad6", "on-secondary-container": "#fffbff",
+                        "tertiary-container": "#a44100", "inverse-on-surface": "#eff1f3",
+                        "primary": "#3525cd", "on-background": "#191c1e",
+                        "surface-dim": "#d8dadc", "on-primary-fixed": "#0f0069",
+                        "surface-tint": "#4d44e3", "error": "#ba1a1a",
+                        "background": "#f7f9fb", "primary-fixed-dim": "#c3c0ff",
+                        "on-surface": "#191c1e", "on-secondary": "#ffffff",
+                        "on-surface-variant": "#464555", "outline": "#777587",
+                        "surface-container-high": "#e6e8ea", "surface-container-low": "#f2f4f6",
+                        "on-tertiary-fixed": "#351000", "primary-container": "#4f46e5",
+                        "secondary": "#8127cf", "secondary-container": "#9c48ea",
+                        "inverse-primary": "#c3c0ff", "tertiary": "#7e3000",
+                        "on-primary-fixed-variant": "#3323cc", "surface-container-highest": "#e0e3e5",
+                        "primary-fixed": "#e2dfff", "on-tertiary-container": "#ffd2be",
+                        "surface-variant": "#e0e3e5", "on-secondary-fixed": "#2c0051",
+                        "inverse-surface": "#2d3133", "surface-bright": "#f7f9fb",
+                        "on-primary-container": "#dad7ff", "surface": "#f7f9fb",
+                        "on-error": "#ffffff", "surface-container": "#eceef0",
+                        "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#ffdbcc", "tertiary-fixed-dim": "#ffb695",
+                        "on-tertiary-fixed-variant": "#7b2f00", "secondary-fixed": "#f0dbff",
+                        "on-secondary-fixed-variant": "#6900b3", "secondary-fixed-dim": "#ddb7ff",
+                        "on-error-container": "#93000a", "on-primary": "#ffffff",
+                        "outline-variant": "#c7c4d8"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fb; color: #191c1e; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+        .bg-login-gradient { background: linear-gradient(135deg, #3525cd 0%, #4f46e5 100%); }
+        .glass-effect { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+        .glass-nav { background: rgba(247, 249, 251, 0.8); backdrop-filter: blur(12px); }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2dfff; border-radius: 10px; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-surface font-body text-on-surface min-h-screen selection:bg-primary-fixed">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
